@@ -1,0 +1,1007 @@
+/* General Styles*/
+
+* {
+    list-style: none;
+}
+
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+body {
+    margin: 0
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: mediumvioletred;
+}
+
+.container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+/**************************************************************/
+
+
+/*Header Section*/
+
+.wrapper {
+    margin: auto;
+}
+
+.search-header {
+    background-color: white;
+    width: 286px;
+}
+
+.search-header span {
+    text-align: center;
+    color: black;
+}
+
+.whiteline {
+    border-right: 1px solid white;
+    width: 267px;
+}
+
+.header {
+    overflow: auto;
+    background-color: #585656;
+    width: 100%;
+}
+
+.header input {
+    height: 30px;
+    width: 249px;
+    text-align: center;
+}
+
+.divleft {
+    float: left;
+    padding: 20px;
+    display: inline-block;
+}
+
+.divmiddle {
+    width: 35%;
+    float: left;
+    padding: 10px;
+    color: white;
+}
+
+.divright {
+    float: right;
+    padding: 20px;
+    display: inline-block;
+}
+
+
+/**********************************************************/
+
+
+/*Login Section*/
+
+.options > p {
+    display: inline-flex;
+    border-right: 1px solid black;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.options {
+    float: left;
+    width: 70%;
+    text-align: right;
+}
+
+.heart {
+    padding-right: 5px;
+}
+
+.tel {
+    float: left;
+    width: 30%;
+}
+
+.login {
+    display: inline-block;
+    width: 100%;
+}
+
+.search-header input {
+    border: 0px;
+    height: 30px;
+    width: 249px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/**********************************************************/
+
+
+/*Logo Section*/
+
+.logoname {
+    color: mediumvioletred;
+}
+
+.logo {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.logo h1 {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 300;
+}
+
+
+/**************************************************************/
+
+
+/*Menu Section*/
+
+.collapse-button i {
+    font-size: 27px;
+}
+
+.search-bar {
+    border: 0px;
+    height: 30px;
+    width: 170px;
+    text-align: center;
+}
+
+.input-group {
+    background-color: white;
+    width: 212px;
+    overflow-y: auto;
+    float: right;
+    margin-right: 10px;
+}
+
+.input-group span {
+    text-align: center;
+    color: black;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    width: 87%;
+    margin: auto;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: mediumvioletred;
+}
+
+.active {
+    display: table-caption!important;
+}
+
+.show-icons {
+    display: none;
+}
+
+#menuBackground {
+    background: #FFFFFF;
+    width: 100%;
+    text-align: center;
+}
+
+#menuContainer {
+    text-align: center;
+}
+
+
+/*Strip the ul of padding and list styling*/
+
+#menuContainer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Create a horizontal list with spacing*/
+
+#menuContainer li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1px;
+}
+
+
+/*Style for menu links*/
+
+#menuContainer li a {
+    display: block;
+    /* min-width: 140px; */
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+    /*background: #2f3036;*/
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0px 14px;
+}
+
+
+/*Hover state for top level links*/
+
+#menuContainer li:hover a {
+    color: mediumvioletred;
+}
+
+
+/*Style for dropdown links*/
+
+#menuContainer li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px
+}
+
+
+/*Hover state for dropdown links*/
+
+#menuContainer li:hover ul a:hover {
+    background: #19c589;
+    color: #fff
+}
+
+
+/*Hide dropdown links until they are needed*/
+
+#menuContainer li ul {
+    position: absolute;
+    display: none
+}
+
+
+/*Make dropdown links vertical*/
+
+#menuContainer li ul li {
+    display: block;
+}
+
+
+/*Prevent text wrapping*/
+
+#menuContainer li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px
+}
+
+
+/*Display the dropdown on hover*/
+
+#menuContainer ul li a:hover + .hidden,
+.hidden:hover {
+    display: block
+}
+
+
+/*Style 'show menu' label button and hide it by default*/
+
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: black;
+    text-align: left;
+    padding: 16px 0px;
+    display: none;
+    width: 100%!important;
+}
+
+.show-menu .collapse-button {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+/*Hide checkbox*/
+
+#menuContainer input[type=checkbox] {
+    display: none
+}
+
+
+/*Show menu when invisible checkbox is checked*/
+
+#menuContainer input[type=checkbox]:checked ~ #menu {
+    display: block;
+    margin: 0 auto
+}
+
+
+/**********************************************************************/
+
+
+/*Slider Section*/
+
+
+/* jssor slider bullet navigator skin 05 css */
+
+
+/*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+
+#jssor_1 {
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    width: 1300px;
+    height: 500px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.jssorb05 {
+    position: absolute;
+}
+
+.jssorb05 div,
+.jssorb05 div:hover,
+.jssorb05 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 16px;
+    height: 16px;
+    background: url('slider/img/b05.png') no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.jssorb05 div {
+    background-position: -7px -7px;
+}
+
+.jssorb05 div:hover,
+.jssorb05 .av:hover {
+    background-position: -37px -7px;
+}
+
+.jssorb05 .av {
+    background-position: -67px -7px;
+}
+
+.jssorb05 .dn,
+.jssorb05 .dn:hover {
+    background-position: -97px -7px;
+}
+
+
+/* jssor slider arrow navigator skin 22 css */
+
+
+/*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+
+.jssora22l,
+.jssora22r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 40px;
+    height: 58px;
+    cursor: pointer;
+    background: url('img/a22.png') center center no-repeat;
+    overflow: hidden;
+}
+
+.jssora22l {
+    background-position: -10px -31px;
+}
+
+.jssora22r {
+    background-position: -70px -31px;
+}
+
+.jssora22l:hover {
+    background-position: -130px -31px;
+}
+
+.jssora22r:hover {
+    background-position: -190px -31px;
+}
+
+.jssora22l.jssora22ldn {
+    background-position: -250px -31px;
+}
+
+.jssora22r.jssora22rdn {
+    background-position: -310px -31px;
+}
+
+.jssorb05 {
+    bottom: 16px;
+    right: 16px;
+}
+
+.jssora22l {
+    top: 0px;
+    left: 12px;
+    width: 40px;
+    height: 58px;
+}
+
+.jssora22r {
+    top: 0px;
+    right: 12px;
+    width: 40px;
+    height: 58px;
+}
+
+.slides {
+    cursor: default;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 1300px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.loading2 {
+    position: absolute;
+    display: block;
+    background: url('../slider/img/loading.gif') no-repeat center center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.loading1 {
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.loading {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.slider-text {
+    position: absolute;
+    top: 200px;
+    left: 60px;
+    width: 480px;
+    height: 120px;
+    font-size: 51px;
+    color: #ffffff;
+    line-height: 60px;
+}
+
+.slider-text span {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.slider-text button {
+    width: 219px;
+    height: 61px;
+    font-size: 21px;
+}
+
+.slider-text button:hover {
+    color: white;
+    background-color: mediumvioletred;
+}
+
+.shop {
+    background-color: white;
+    color: mediumvioletred;
+}
+
+.text {
+    padding-bottom: 50px;
+}
+
+
+/****************************************************************/
+
+
+/*Onsale Section*/
+
+
+/*.onsale {
+    width: 50%;
+    float: left;
+}*/
+
+.two-tabs {
+    padding-top: 10px;
+}
+
+.onsale:hover,
+.whats-new:hover {
+    cursor: pointer;
+}
+
+.whats-new,
+.onsale {
+    display: inline-block;
+}
+
+.border-img {
+    border: 1px solid black;
+    width: 100%;
+}
+
+
+/********************************************************************/
+
+
+/*Bestseller Section*/
+
+.bestseller {
+    clear: both;
+    padding-top: 15px;
+}
+
+.pictures {
+    text-align: center;
+    margin: auto;
+}
+
+.flower {
+    width: 185px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.flower .price {
+    padding: 40px;
+    visibility: hidden;
+}
+
+.flower:hover {
+    border: 1px solid black;
+}
+
+.flower:hover .price {
+    visibility: visible;
+}
+
+.flower .price .amount {
+    float: left;
+}
+
+.flower .price .heart {
+    float: right;
+}
+
+.price > span {
+    color: black;
+}
+
+#line {
+    position: relative;
+    height: 40px;
+}
+
+#line hr {
+    position: absolute;
+    width: 99%;
+    border-top: 1px solid black;
+}
+
+#line h3 {
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    height: 40px;
+    width: 200px;
+    font-family: arial;
+}
+
+.description {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/*******************************************************************/
+
+
+/*Footer Section*/
+
+footer {
+    display: inline;
+    background-color: #E0E0E0;
+    margin-top: 40px;
+}
+
+.footer2,
+.footer3,
+.footer4 {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+}
+
+.footer-part1,
+.footer-part2 {
+    display: inline-block;
+    padding: 0px;
+    float: left;
+    width: 50%;
+    margin: auto;
+}
+
+.mailing-list {
+    padding: 10px;
+}
+
+@media screen and (max-width: 907px) {
+    .footer-part1,
+    .footer-part2 {
+        width: 100%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+
+.footer-img {
+    position: relative;
+    overflow-y: auto;
+    background-size: cover;
+    padding: 10px 0px;
+    height:60px;
+}
+
+.footer-part1 .footer-img{
+    background-image: url("assets/footer1.jpg");
+}
+
+.footer-part2 .footer-img{    
+    background-image: url("assets/footer2.jpg");
+}
+
+.footer-text {
+   
+    top: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+}
+
+.footer-text span {
+    color: white;
+    font-size: 20px;
+}
+
+.footer-part2 .footer-img .footer-text {
+    top: 32px;
+}
+
+.join {
+    background-color: black;
+    color: white;
+    height: 35px;
+    width: 175px;
+}
+
+.join:hover {
+    background-color: #5D1E45;
+}
+
+i:hover {
+    color: #5D1E45;
+}
+
+.social {
+    display: inline-flex;
+}
+
+.social i {
+    padding-right: 10px;
+    font-size: 22px;
+}
+
+
+/********************************************************/
+
+
+/* Retina display */
+
+@media screen and (min-width: 1024px) {
+    .border-img,
+    .border-img img {
+        width: 100%;
+    }
+    .whats-new,
+    .onsale {
+        display: inline-block;
+        width: 45%;
+        margin: 0 2.25%;
+    }
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 980px) and (max-width: 1024px) {
+    .show-icons {
+        display: none;
+    }
+}
+
+
+/* Tablet */
+
+@media screen and (min-width: 760px) and (max-width: 980px) {
+    .show-icons {
+        display: none;
+    }
+    .tel,
+    .options {
+        display: block;
+    }
+    .header .divmiddle {
+        display: none;
+    }
+    .border-img {
+        text-align: center;
+        display: inline-block;
+    }
+    .whiteline {
+        border-right: 1px solid #585656;
+    }
+}
+
+
+/* Mobile HD */
+
+@media screen and (min-width: 350px) and (max-width: 760px) {
+    .container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .header {
+        width: 100%;
+        overflow: hidden;
+    }
+    .divmiddle {
+        width: 100%;
+        text-align: center;
+    }
+    .onsale {
+        width: 100%;
+    }
+    .border-img > img {
+        width: 100%;
+    }
+    .header {
+        display: none;
+    }
+    .show-icons {
+        display: inline-block;
+        float: right;
+    }
+    .show-icons i {
+        padding: 2px;
+        color: #C71585;
+        font-size: 21px;
+    }
+    .tel,
+    .options {
+        display: none;
+    }
+    .whats-new,
+    .onsale {
+        display: inline-block;
+        width: 95%;
+        margin: 0 2.25%;
+    }
+}
+
+
+/* Mobile LD */
+
+@media screen and (max-width: 350px) {
+    .container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .header {
+        overflow: hidden;
+    }
+    .onsale,
+    .whats-new,
+    .border-img,
+    {
+        width: 95%;
+        margin: 0 2.5%;
+        display: inline-block;
+        text-align: center;
+    }
+    .border-img > img {
+        width: 100%;
+    }
+    .header {
+        display: none;
+    }
+    .header {
+        display: none;
+    }
+    .show-icons {
+        display: inline-block;
+        float: right;
+    }
+    .show-icons i {
+        padding: 2px;
+        color: #C71585;
+        font-size: 21px;
+    }
+    .tel,
+    .options {
+        display: none;
+    }
+    .border-img {
+        width: 99%;
+    }
+}
+
+
+/* Between screens*/
+
+@media screen and (max-width: 560px) {
+    .footer2,
+    .footer3,
+    .footer4 {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .footer-part1,
+    .footer-part-2 {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 908px) {
+    .footer-part1 > *,
+    .footer-part2 > * {
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1164px) {
+    .divmiddle {
+        display: block;
+        width: 190px;
+    }
+}
+
+@media screen and (max-width:784px) {
+    .divright {
+        float: left;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width: 1115px) {
+    .divmiddle {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1123px) {
+    .menubar {
+        display: block;
+    }
+    .menu ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1268px) {
+    .menu ul {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1258px) {
+    .footer-part1 {
+        clear: left;
+    }
+}
+
+@media screen and (min-width:750px) and (max-width: 1164px) {
+    .whats-new,
+    .onsale {
+        display: inline-block;
+        width: 45%;
+        margin: 0 2.25%;
+    }
+    .border-img {
+        width: 100%;
+    }
+    .border-img img {
+        width: 100%;
+    }
+}
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width: 760px) {
+    /*Make dropdown links appear inline*/
+    #menuContainer ul {
+        position: static;
+        display: none;
+        white-space: initial;
+    }
+    /*Create vertical spacing*/
+    #menuContainer li {
+        margin-bottom: 1px;
+        margin-right: 0;
+    }
+    /*Make all menu links full width*/
+    #menuContainer ul li,
+    #menuContainer li a {
+        width: 100%;
+        padding: 0;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display: block
+    }
+}
